@@ -432,4 +432,51 @@ body {
   -o-object-position: center;
      object-position: center;
   transform: scale(0.7);
+}
+
+.portfolio {
+  padding-top: 80px;
+}
+.portfolio__container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.portfolio__items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.portfolio__item {
+  flex: 0 1 22%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgb(126, 126, 126);
+}
+.portfolio__img {
+  position: relative;
+  aspect-ratio: 0.8;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.portfolio__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolio__signature {
+  display: flex;
+}
+.portfolio__check {
+  height: 43px;
+  width: 43px;
+  background: #168ECD;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
