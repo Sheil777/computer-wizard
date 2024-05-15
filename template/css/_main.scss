@@ -519,12 +519,13 @@
 
   &__signature {
     display: flex;
-
+    gap: 20px;
+    padding: 20px 10px;
   }
 
   &__check {
     height: 43px;
-    width: 43px;
+    flex: 0 0 43px;
     background: $color;
     border-radius: 50%;
     display: flex;
@@ -537,6 +538,9 @@
   }
 
   &__text {
-    
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 22px;
   }
 }

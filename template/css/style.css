@@ -470,13 +470,21 @@ body {
 }
 .portfolio__signature {
   display: flex;
+  gap: 20px;
+  padding: 20px 10px;
 }
 .portfolio__check {
   height: 43px;
-  width: 43px;
+  flex: 0 0 43px;
   background: #168ECD;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.portfolio__text {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  line-height: 22px;
 }/*# sourceMappingURL=style.css.map */
