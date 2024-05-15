@@ -32,4 +32,12 @@ $(document).ready(function(){
       }
     }
   });
+
+  const swiperFeedback = new Swiper('.feedback__slider', {
+    navigation: {
+      prevEl: '.feedback__prev',
+      nextEl: '.feedback__next',
+    },
+    autoHeight: true,
+  });
 });

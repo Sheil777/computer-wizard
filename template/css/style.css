@@ -43,6 +43,13 @@ body {
   box-sizing: content-box; /* Сам прибавляет padding */
 }
 
+._header {
+  font-size: 40px;
+  line-height: 1.3;
+  text-align: center;
+  font-weight: bold;
+}
+
 /*
 ._ibg {
     position: relative;
@@ -235,12 +242,6 @@ body {
 .about {
   padding-top: 100px;
 }
-.about__container h2 {
-  font-size: 40px;
-  line-height: 1.3;
-  text-align: center;
-  font-weight: bold;
-}
 .about__flex {
   display: flex;
   flex-wrap: wrap;
@@ -272,12 +273,6 @@ body {
 }
 .breakdowns {
   padding-top: 100px;
-}
-.breakdowns__container h2 {
-  font-size: 40px;
-  line-height: 1.3;
-  text-align: center;
-  font-weight: bold;
 }
 .breakdowns__flex {
   display: flex;
@@ -340,10 +335,7 @@ body {
   margin-top: 10px;
 }
 
-.price__container h2 {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
+.price {
   padding-top: 90px;
 }
 .price__pagination {
@@ -437,11 +429,6 @@ body {
 .portfolio {
   padding-top: 80px;
 }
-.portfolio__container h2 {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-}
 .portfolio__items {
   display: flex;
   justify-content: space-between;
@@ -487,4 +474,19 @@ body {
   color: white;
   font-weight: bold;
   line-height: 22px;
+}
+
+.feedback {
+  padding-top: 50px;
+}
+.feedback__block {
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+}
+.feedback__slider {
+  width: 80%;
+}
+.feedback__img img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
