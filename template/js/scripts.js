@@ -30,7 +30,7 @@ $(document).ready(function(){
           slidesPerView: 'auto',
           spaceBetween: 10,
       }
-    }
+    },
   });
 
   const swiperFeedback = new Swiper('.feedback__slider', {
@@ -38,6 +38,12 @@ $(document).ready(function(){
       prevEl: '.feedback__prev',
       nextEl: '.feedback__next',
     },
+    
     autoHeight: true,
+
+    pagination: {
+      el: '.feedback__pagination',
+    },
+
   });
 });
