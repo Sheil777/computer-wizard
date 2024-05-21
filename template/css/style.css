@@ -137,15 +137,34 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 850px) {
+  .promo__container {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
 .promo__left {
   flex: 1;
   color: white;
   margin-top: -100px;
 }
+@media (max-width: 850px) {
+  .promo__left {
+    margin-top: 0;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 .promo__left h1 {
   font-size: 19px;
   margin-bottom: 20px;
   font-weight: 500;
+}
+@media (max-width: 850px) {
+  .promo__left h1 {
+    text-align: center;
+  }
 }
 .promo__left p {
   font-size: 40px;
@@ -154,9 +173,24 @@ body {
   line-height: 1.3;
   margin-bottom: 20px;
 }
+@media (max-width: 540px) {
+  .promo__left p {
+    font-size: 32px;
+  }
+}
+@media (max-width: 420px) {
+  .promo__left p {
+    font-size: 25px;
+  }
+}
 .promo__left ul {
   list-style-position: inside;
   font-size: 16px;
+}
+@media (max-width: 330px) {
+  .promo__left ul {
+    font-size: 15px;
+  }
 }
 .promo__left ul li {
   margin-bottom: 15px;
@@ -168,6 +202,39 @@ body {
   flex: 0 0 320px;
   border-radius: 17px;
   background-color: white;
+}
+@media (max-width: 850px) {
+  .promo__right {
+    display: none;
+  }
+}
+.promo__button_phone {
+  display: none;
+}
+@media (max-width: 850px) {
+  .promo__button_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 40px;
+    height: 54px;
+    width: 500px;
+    background-color: rgb(255, 102, 23);
+    border-radius: 10px;
+  }
+}
+@media (max-width: 540px) {
+  .promo__button_phone {
+    width: 380px;
+  }
+}
+@media (max-width: 420px) {
+  .promo__button_phone {
+    width: 300px;
+  }
 }
 
 .promo-form {
@@ -363,9 +430,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   flex: 0 0 49%;
   height: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
+@media (max-width: 730px) {
+  .price__item {
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: 370px) {
+  .price__item {
+    flex-direction: column;
+    padding: 10px 0;
+  }
 }
 .price__name {
   font-size: 16px;
@@ -383,9 +462,21 @@ body {
   font-weight: bold;
   color: #000;
 }
+@media (max-width: 560px) {
+  .price__value {
+    width: 110px;
+  }
+}
 
 .price-pagination__wrap {
   justify-content: center;
+}
+@media (max-width: 560px) {
+  .price-pagination__wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 .price-pagination__item {
   display: flex;
