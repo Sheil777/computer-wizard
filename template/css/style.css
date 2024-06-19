@@ -82,6 +82,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header-top__logo img {
+  height: 60px;
+}
 .header-top__times img {
   height: 20px;
 }
