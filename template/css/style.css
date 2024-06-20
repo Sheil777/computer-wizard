@@ -434,6 +434,11 @@ body {
 .about {
   padding-top: 100px;
 }
+@media (max-width: 770px) {
+  .about {
+    padding-top: 50px;
+  }
+}
 .about__flex {
   display: flex;
   flex-wrap: wrap;
@@ -510,12 +515,12 @@ body {
   margin-top: 25px;
   color: rgb(51, 51, 51);
 }
-@media (max-width: 770px) {
-  .about {
-    padding-top: 50px;
+@media (max-width: 500px) {
+  .about__line {
+    font-size: 17px;
+    line-height: 1.3;
   }
 }
-
 .breakdowns {
   padding-top: 100px;
 }
