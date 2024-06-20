@@ -524,6 +524,16 @@ body {
 .breakdowns {
   padding-top: 100px;
 }
+@media (max-width: 800px) {
+  .breakdowns {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 550px) {
+  .breakdowns {
+    padding-top: 50px;
+  }
+}
 .breakdowns__flex {
   display: flex;
   flex-wrap: wrap;
@@ -534,6 +544,11 @@ body {
   padding: 20px;
   box-sizing: border-box;
   gap: 20px;
+}
+@media (max-width: 550px) {
+  .breakdowns__flex {
+    margin-top: 20px;
+  }
 }
 .breakdowns__item {
   display: flex;
