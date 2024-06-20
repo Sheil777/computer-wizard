@@ -13,13 +13,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 550px) {
+      height: 45px;
+    }
   }
 
   &__logo {
 
     img {
-      height: 60px;
+      height: 50px;
 
+      @media (max-width: 550px) {
+        height: 38px;
+      }
     }
   }
 
@@ -34,6 +41,10 @@
       font-size: 14px;
       vertical-align: middle;
     }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__phone {
@@ -46,14 +57,25 @@
       color: black;
       margin-bottom: 6px;
 
+      @media (max-width: 550px) {
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-right: 35px;
+      }
+
       &:hover {
         color: $color;
       }
+
     }
 
     p {
       color: rgb(85, 85, 85);
       font-size: 14px;
+      
+      @media (max-width: 550px) {
+        display: none;
+      }
     }
   }
 }
@@ -61,11 +83,27 @@
 .header-bottom {
 
   &__container {
-    height: 58px;
+    min-height: 58px;
     display: flex;
     align-items: center;
+
+    @media (max-width: 550px) {
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+    }
   }
 
+  @media (max-width: 550px) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+    &.open {
+      max-height: 500px;
+    }
+  }
 }
 
 .menu {
@@ -76,6 +114,10 @@
 
       list-style: none;
       gap: 30px;
+
+      @media (max-width: 550px) {
+        flex-direction: column;
+      }
 		}
 
 		&__item {
