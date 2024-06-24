@@ -455,6 +455,7 @@
     box-sizing: border-box;
     gap: 20px;
 
+
     @media (max-width: 550px) {
       margin-top: 20px;
     }
@@ -467,6 +468,22 @@
     border-radius: 20px; 
     overflow: hidden;
     height: 175px;
+    
+    @media (max-width: 1000px) {
+      flex: 0 1 45%;  
+    }
+
+    @media (max-width: 810px) {
+      flex: 0 1 48%;
+    }
+
+    @media (max-width: 650px) {
+      flex: 0 1 100%;
+    }
+
+    @media (max-width: 500px) {
+      height: auto;
+    }
   }
 
   &__left {
@@ -483,6 +500,10 @@
 
       @media (max-width: 1150px) {
         font-size: 18px;
+      }
+
+      @media (max-width: 500px) {
+        margin-top: 2px;
       }
     }
   }
@@ -502,6 +523,10 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @media (max-width: 400px) {
+      flex: 0 1 41%;
+    }
   }
 }
 
@@ -513,6 +538,10 @@
 
     @media (max-width: 1150px) {
       font-size: 10px;
+    }
+
+    @media (max-width: 500px) {
+      margin-top: 4px;
     }
   }
 
@@ -530,6 +559,10 @@
     @media (max-width: 1150px) {
       width: 100px;
       font-size: 14px;
+    }
+
+    @media (max-width: 500px) {
+      margin-top: 20px;
     }
   }
 }
@@ -684,6 +717,11 @@
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+
+    @media (max-width: 950px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -691,6 +729,21 @@
     border-radius: 20px;
     overflow: hidden;
     background: rgb(126, 126, 126);
+
+    @media (max-width: 950px) {
+      flex: 0 1 30%;
+    }
+
+    @media (max-width: 660px) {
+      flex: 0 1 45%;
+    }
+    @media (max-width: 500px) {
+      flex: 0 1 47%;
+    }
+
+    @media (max-width: 380px) {
+      flex: 0 1 46%;
+    }
   }
 
   &__img {
@@ -724,6 +777,13 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 500px) {
+      height: 35px;
+      flex: 0 0 35px;
+
+      display: none;
+    }
+
     img {
 
     }
@@ -734,6 +794,11 @@
     color: white;
     font-weight: bold;
     line-height: 22px;
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 
