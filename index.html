@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./template/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./template/css/fancybox.css">
     <link rel="stylesheet" href="./template/css/style.css">
     <title>Компьютерный мастер</title>
 </head>
@@ -352,19 +353,19 @@
                         <div class="feedback__slider swiper">
                             <div class="feedback__wrap swiper-wrapper">
                                 <div class="feedback__slide swiper-slide">
-                                    <div class="feedback__img">
+                                    <a data-fancybox="feedback" href="./template/img/feedback/1.png" class="feedback__img">
                                         <img src="./template/img/feedback/1.png" alt="Отзыв с Авито">
-                                    </div>
+                                    </a>
                                 </div>  
                                 <div class="feedback__slide swiper-slide">
-                                    <div class="feedback__img">
+                                    <a data-fancybox="feedback" class="feedback__img" href="./template/img/feedback/2.png">
                                         <img src="./template/img/feedback/2.png" alt="Отзыв с Авито">
-                                    </div>
+                                    </a>
                                 </div>  
                                 <div class="feedback__slide swiper-slide">
-                                    <div class="feedback__img">
+                                    <a data-fancybox="feedback" class="feedback__img" href="./template/img/feedback/1.png">
                                         <img src="./template/img/feedback/1.png" alt="Отзыв с Авито">
-                                    </div>
+                                    </a>
                                 </div>  
                             </div>
                             
@@ -387,8 +388,8 @@
                 </div>
                 <div class="footer__right">
                     <p>Выезжаю по Москве + 30 км от МКАД</p>
-                    <div class="footer__map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afd8cf600bca7d6f275cf2547b6277e781552e6b37bea35908ab7a841c3b1ad80&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    <div class="footer__map" id="wrapMap">
+                        <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afd8cf600bca7d6f275cf2547b6277e781552e6b37bea35908ab7a841c3b1ad80&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                     </div>
                 </div>
                 <div class="footer__bottom">
@@ -410,6 +411,8 @@
     <script src="./template/js/jquery.maskedinput.min.js"></script>
     <script src="./template/js/burger.js"></script>
     <script src="./template/js/scroll.js"></script>
+    <script src="./template/js/fancybox.umd.js"></script>
+    <script src="./template/js/clickToMap.js"></script>
     <script src="./template/js/scripts.js"></script>
 </body>
 </html>
