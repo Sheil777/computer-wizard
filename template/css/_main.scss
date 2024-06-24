@@ -997,3 +997,13 @@
     }
   }
 }
+
+
+/*******************************/
+.popup-request {
+  &__content {
+    border-radius: 20px;
+    max-width: 450px;
+    padding: 0;
+  }
+}

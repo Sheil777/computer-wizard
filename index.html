@@ -384,7 +384,7 @@
                     <p><a href="tel:+79527802968">+7 (952) 780-29-68</a></p>
                     <h3>График работы:</h3>
                     <p>Без выходных с 8:00 до 23:00</p>
-                    <a class="footer__button" href="#">Оставить заявку</a>
+                    <a class="footer__button popup-link" href="#popup-request">Оставить заявку</a>
                 </div>
                 <div class="footer__right">
                     <p>Выезжаю по Москве + 30 км от МКАД</p>
@@ -398,13 +398,22 @@
                 </div>
             </div>
         </footer>
-        <!-- <div id="popup" class="popup">
-            <div class="popup__body">
-                <div class="popup__content">
-                    
+        <div id="popup-request" class="popup popup-request">
+            <div class="popup__body popup-request__body">
+                <div class="popup__content popup-request__content">
+                    <div class="promo-form">
+                        <h2>Оставьте заявку!<br>Перезвоню через 5 минут!</h2>
+                        <form action="">
+                            <input name="" type="text" placeholder="Телефон *" class="mask__phone" required>
+                            <input name="" type="text" placeholder="Имя">
+                            <textarea name="" placeholder="Ваш вопрос *"></textarea>
+                            <input class="promo-form__submit" type="submit" value="Оставить заявку">
+                        </form>
+                        <p>Нажимая на кнопку, вы даете согласие на <a>обработку персональных данных</a></p>
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
     <script src="./template/js/jquery-3.6.0.min.js"></script>
     <script src="./template/js/swiper-bundle.min.js"></script>
@@ -413,6 +422,7 @@
     <script src="./template/js/scroll.js"></script>
     <script src="./template/js/fancybox.umd.js"></script>
     <script src="./template/js/clickToMap.js"></script>
+    <script src="./template/js/popups.js"></script>
     <script src="./template/js/scripts.js"></script>
 </body>
 </html>
