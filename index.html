@@ -72,10 +72,10 @@
                     <div class="promo__right">
                         <div class="promo-form">
                             <h2>Оставьте заявку!<br>Перезвоню через 5 минут!</h2>
-                            <form action="">
-                                <input name="" type="text" placeholder="Телефон *" class="mask__phone" required>
+                            <form action="" class="_formSend">
+                                <input name="" type="text" placeholder="Телефон *" class="mask__phone _req">
                                 <input name="" type="text" placeholder="Имя">
-                                <textarea name="" placeholder="Ваш вопрос *"></textarea>
+                                <textarea name="" placeholder="Ваш вопрос *" class="_req"></textarea>
                                 <input class="promo-form__submit" type="submit" value="Оставить заявку">
                             </form>
                             <p>Нажимая на кнопку, вы даете согласие на <a>обработку персональных данных</a></p>
@@ -401,12 +401,12 @@
         <div id="popup-request" class="popup popup-request">
             <div class="popup__body popup-request__body">
                 <div class="popup__content popup-request__content">
-                    <div class="promo-form">
+                    <div class="promo-form"> 
                         <h2>Оставьте заявку!<br>Перезвоню через 5 минут!</h2>
-                        <form action="">
-                            <input name="" type="text" placeholder="Телефон *" class="mask__phone" required>
+                        <form action="" class="_formSend">
+                            <input name="" type="text" placeholder="Телефон *" class="mask__phone _req">
                             <input name="" type="text" placeholder="Имя">
-                            <textarea name="" placeholder="Ваш вопрос *"></textarea>
+                            <textarea name="" placeholder="Ваш вопрос *" class="_req"></textarea>
                             <input class="promo-form__submit" type="submit" value="Оставить заявку">
                         </form>
                         <p>Нажимая на кнопку, вы даете согласие на <a>обработку персональных данных</a></p>
@@ -423,6 +423,7 @@
     <script src="./template/js/fancybox.umd.js"></script>
     <script src="./template/js/clickToMap.js"></script>
     <script src="./template/js/popups.js"></script>
+    <script src="./template/js/mailTo.js"></script>
     <script src="./template/js/scripts.js"></script>
 </body>
 </html>
