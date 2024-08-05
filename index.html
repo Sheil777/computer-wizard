@@ -73,15 +73,15 @@
                         <div class="promo-form">
                             <h2>Оставьте заявку!<br>Перезвоню через 5 минут!</h2>
                             <form action="" class="_formSend">
-                                <input name="" type="text" placeholder="Телефон *" class="mask__phone _req">
-                                <input name="" type="text" placeholder="Имя">
-                                <textarea name="" placeholder="Ваш вопрос *" class="_req"></textarea>
+                                <input name="phone" type="text" placeholder="Телефон *" class="mask__phone _req" required>
+                                <input name="name" type="text" placeholder="Имя">
+                                <textarea name="question" placeholder="Ваш вопрос *" class="_req" required></textarea>
                                 <input class="promo-form__submit" type="submit" value="Оставить заявку">
                             </form>
                             <p>Нажимая на кнопку, вы даете согласие на <a>обработку персональных данных</a></p>
                         </div>
                     </div>
-                    <a href="#" class="promo__button_phone">Оставить заявку</a>
+                    <a href="#popup-request" class="promo__button_phone popup-link">Оставить заявку</a>
                 </div>
             </section>
             <section class="about" id="about">
@@ -404,13 +404,30 @@
                     <div class="promo-form"> 
                         <h2>Оставьте заявку!<br>Перезвоню через 5 минут!</h2>
                         <form action="" class="_formSend">
-                            <input name="" type="text" placeholder="Телефон *" class="mask__phone _req">
-                            <input name="" type="text" placeholder="Имя">
-                            <textarea name="" placeholder="Ваш вопрос *" class="_req"></textarea>
+                            <input name="phone" type="text" placeholder="Телефон *" class="mask__phone _req" required>
+                            <input name="name" type="text" placeholder="Имя">
+                            <textarea name="question" placeholder="Ваш вопрос *" class="_req" required></textarea>
                             <input class="promo-form__submit" type="submit" value="Оставить заявку">
                         </form>
                         <p>Нажимая на кнопку, вы даете согласие на <a>обработку персональных данных</a></p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup-sent" class="popup popup-sent">
+            <div class="popup__body popup-sent__body">
+                <div class="popup__content popup-sent__content">
+                    <h2 class="popup-sent__header">Заявка успешно отправлена!</h2>
+                    <div class="popup-sent__message">Я свяжусь с Вами в течение часа</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="popup-sent-error" class="popup popup-sent-error">
+            <div class="popup__body popup-sent-error__body">
+                <div class="popup__content popup-sent-error__content">
+                    <h2 class="popup-sent-error__header">Произошла ошибка во время отправки заявки!</h2>
+                    <div class="popup-sent-error__message">Попробуйте повторить попытку позже</div>
                 </div>
             </div>
         </div>
@@ -423,7 +440,9 @@
     <script src="./template/js/fancybox.umd.js"></script>
     <script src="./template/js/clickToMap.js"></script>
     <script src="./template/js/popups.js"></script>
-    <script src="./template/js/mailTo.js"></script>
+    <!-- <script src="./template/js/mailTo.js"></script> -->
+    <script src="./template/js/axios.min.js"></script>
+    <script src="./template/js/sendToTelegram.js"></script>
     <script src="./template/js/scripts.js"></script>
 </body>
 </html>
